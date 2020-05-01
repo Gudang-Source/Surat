@@ -49,7 +49,8 @@
       </div>
       <div class="row">
         <div class="col-xs-8">
-          <a href="<?=base_url()?>login/lupa">Saya lupa password</a>
+        <a href="<?= base_url() ?>login/lupa">Saya lupa password</a>    
+         
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
