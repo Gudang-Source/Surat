@@ -26,7 +26,7 @@ class Autentikasi extends CI_Controller {
 
 		$this->load->model('login');
 
-		$query = $this->login->login( $username , $password );
+		$query = $this->login->doLogin( $username , $password );
 		$row   = $query->num_rows();
 		$hasil = $query->result();
 
