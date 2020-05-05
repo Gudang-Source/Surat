@@ -1,7 +1,7 @@
 
 <div class="col-md-12 text-center" style="margin-top:15%">
-	<img src="<?= base_url() ?>assets/img/logo-damkar.png" class="animated bounceIn img-responsive" alt="Image" style="width: 10%;margin: auto;">
+	<img src="<?= base_url() ?>assets/img/logo-damkar.png" class="animated bounceIn img-responsive" alt="Image" style="width: 30%;margin: auto;">
 	<br>
-	<a href="<?php echo base_url() ?>lain/panduan" class="btn btn-primary btn-flat animated bounceIn"><i class="fa fa-book"></i> Lihat Panduan Sistem </a>
+	<!-- <a href="<?php echo base_url() ?>lain/panduan" class="btn btn-primary btn-flat animated bounceIn"><i class="fa fa-book"></i> Lihat Panduan Sistem </a> -->
 </div>
 

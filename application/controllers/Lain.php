@@ -88,8 +88,8 @@ class Lain extends CI_Controller {
 		$this->load->view('footer');
 
 	}
-
-	public function about()
+// tentang aplikasi
+	public function about() 
 	{
 		$this->load->view('header');
 		$this->load->view('lain/about');
