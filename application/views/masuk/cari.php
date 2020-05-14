@@ -92,11 +92,11 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="data" class="table table-bordered table-striped">
-                <thead>
+            <table id="data" class="table text-center">
+                <thead class="thead-light align-middle">
                 <tr>
                   <tr>
-          					<th>NO</th>
+          					<th class="align-middle">NO</th>
                     <th>DISPOSISI</th>
                     <th>NOMOR DISPOSISI</th>
                     <th>FILE</th>
@@ -118,7 +118,7 @@
                     <?php if(!empty($d->upload_surat_masuk) && empty($d->filedis) && empty($d->iddis) ) {?>
                       <a href="masuk/disposisi/<?= $d->id_surat_masuk ?>/<?= $d->kontak ?>/<?= $d->tgl_diterima_surat_masuk ?>" title="Klik untuk memulai disposisi" class="btn btn-primary" ><i class="fa fa-plus"></i></a>
                     <?php }elseif ( !empty($d->iddis) && empty($d->filedis) ) { ?>
-                      <a title="Terdapat data disposisi, file disposisi kosong" class="btn btn-warning" ><i class="fa fa-check"></i></a>
+                      <a href="disposisi<?= $d->id_surat_masuk ?>" title="Klik untuk edit disposisi" class="btn btn-warning" ><i class="fa fa-check"></i></a>
                       <a href="masuk/lembar_disposisi/<?= $d->id_surat_masuk ?>" title="Cetak lembar disposisi" class="btn btn-primary popupwindow" rel="windowCenter" ><i class="fa fa-print"></i></a>
                     <?php }elseif (empty($d->upload_surat_masuk)) { ?>
                       

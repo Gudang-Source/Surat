@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -7,107 +6,106 @@
 
 	<title></title>
 
-<style>
+	<style>
+		table {
 
-	table {
+			border-collapse: collapse;
 
-	    border-collapse: collapse;
+			width: 100%;
 
-	    width: 100%;
-
-	}
-
-
-
-	th, td {
-
-	    text-align: left;
-
-	    padding: 8px;
-
-	}
+		}
 
 
 
-	tr:nth-child(even){background-color: #f2f2f2}
+		th,
+		td {
+
+			text-align: left;
+
+			padding: 8px;
+
+		}
 
 
 
-	th {
+		tr:nth-child(even) {
+			background-color: #f2f2f2
+		}
 
-	    background-color: teal;
 
-	    color: white;
 
-	}
+		th {
 
-</style>
+			background-color: teal;
+
+			color: white;
+
+		}
+	</style>
 
 </head>
 
 <body style="padding: 10px;width: 800px;margin: auto;">
 
-<table style="margin-bottom: -20px;">
+	<table style="margin-bottom: -20px;">
 
-	<tr>
+		<tr>
 
-		<td><img src="<?= base_url() ?>assets/img/logostain.png" width="120px;"></td>
+			<td><img src="<?= base_url() ?>assets/img/logo-damkar.png" width="120px;"></td>
 
-		<td>
+			<td>
 
-			<p style="font-size: 24px;font-weight: bold;margin-bottom: -10px;" >LAPORAN SURAT KELUAR</p>
+				<p style="font-size: 24px;font-weight: bold;margin-bottom: -10px;">LAPORAN SURAT KELUAR</p>
 
-			<p style="margin-bottom: -10px;font-weight: bold;font-size: 16px;">SEKOLAH TINGGI AGAMA ISLAM NEGERI ( STAIN ) KEDIRI</p>
+				<p style="margin-bottom: -10px;font-weight: bold;font-size: 16px;">Pemadam Kebakaran Kabupaten Bantul
+				</p>
 
-			<p style="font-size: 12px;line-height: 20px;">Jl. Sunan Ampel No.7 Ngronggo Kediri 64127 | Telp. (0354) 689282 Fax. (0354) 686564 | E-mail: stainkediri@kemenag.go.id / stain_kediri@yahoo.co.id</p>
+				<p style="font-size: 12px;line-height: 20px;">Jl. KH. Wachid Hasyim, Sumuran, Palbapang, Bantul,
+					D.I.Yogyakarta 55714 | Telp. (0274) 368 222 Fax. (0274) 646 2100 | E-mail: bpbd@bantulkab.go.id </p>
 
-		</td>
+			</td>
 
-	</tr>
+		</tr>
 
-</table>
+	</table>
 
-<hr style="font-weight: bold;">
+	<hr style="font-weight: bold;">
 
-<b  style="font-size: 12px;">Tanggal cetak : <?php echo date('d-m-Y H:i:s') ?> </b>
+	<b style="font-size: 12px;">Tanggal cetak : <?php echo date('d-m-Y H:i:s') ?> </b>
 
-<table border="1" width="100%" style="font-size: 12px;">
+	<table border="1" width="100%" style="font-size: 12px;">
 
-	<tr>
+		<tr>
 
-		<th>NO</th>
+			<th>NO</th>
 
-		<th>NOMOR SURAT</th>
+			<th>NOMOR SURAT</th>
 
-		<th>PERIHAL</th>
+			<th>PERIHAL</th>
 
-		<th>DARI</th>
+			<th>DARI</th>
 
-	</tr>
+		</tr>
 
-	<?php $no = 0 ; foreach($sk->result() as $d) { $no++;?>
-			<tr>
-				<td><?php echo $no; ?></td>
-				
-				<td>
-					<?php echo $d->nomor_surat_keluar; ?> 
-				</td>	
-				
-				<td><?php echo $d->perihal_surat_keluar; ?></td>
-				<td><?php echo $d->kontak; ?></td>
-				
-			</tr>
+		<?php $no = 0 ; foreach($sk->result() as $d) { $no++;?>
+		<tr>
+			<td><?php echo $no; ?></td>
 
-	<?php } ?>
+			<td>
+				<?php echo $d->nomor_surat_keluar; ?>
+			</td>
 
-</table>
-<script>
+			<td><?php echo $d->perihal_surat_keluar; ?></td>
+			<td><?php echo $d->kontak; ?></td>
 
-	window.print();
+		</tr>
 
-</script>
+		<?php } ?>
+
+	</table>
+	<script>
+		window.print();
+	</script>
 </body>
 
 </html>
-
-

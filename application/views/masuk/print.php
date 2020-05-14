@@ -51,15 +51,15 @@
 
 	<tr>
 
-		<td><img src="<?= base_url() ?>assets/img/logostain.png" width="120px;"></td>
+		<td><img src="<?= base_url() ?>assets/img/logo-damkar.png" width="120px;"></td>
 
 		<td>
 
 			<p style="font-size: 24px;font-weight: bold;margin-bottom: -10px;" >LAPORAN SURAT MASUK</p>
 
-			<p style="margin-bottom: -10px;font-weight: bold;font-size: 16px;">SEKOLAH TINGGI AGAMA ISLAM NEGERI ( STAIN ) KEDIRI</p>
+			<p style="margin-bottom: -10px;font-weight: bold;font-size: 16px;">Pemadam Kebakaran Kabupaten Bantul</p>
 
-			<p style="font-size: 12px;line-height: 20px;">Jl. Sunan Ampel No.7 Ngronggo Kediri 64127 | Telp. (0354) 689282 Fax. (0354) 686564 | E-mail: stainkediri@kemenag.go.id / stain_kediri@yahoo.co.id</p>
+			<p style="font-size: 12px;line-height: 20px;">Jl. KH. Wachid Hasyim, Sumuran, Palbapang, Bantul, D.I.Yogyakarta 55714 | Telp. (0274) 368 222 Fax. (0274) 646 2100  | E-mail: bpbd@bantulkab.go.id </p>
 
 		</td>
 

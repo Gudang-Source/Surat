@@ -5,7 +5,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; Tirta Perwita <a href="http://unipdu.ac.id">YSN</a> TTirta Perwita by <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> 
+    <strong>Copyright &copy; Tirta Perwita <a href="">YSN</a> TTirta Perwita by <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> 
     All rights reserved.
   </footer>
 

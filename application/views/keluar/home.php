@@ -9,76 +9,7 @@
     <section class="content">
       <?php echo $this->session->flashdata('alert'); ?>
       <!-- Pencarian Default box -->
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title"><i class="fa fa-search"></i> Pencarian</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="sembunyi / perlikatkan">
-              <i class="fa fa-minus"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <form action="<?= base_url() ?>keluar/cari" method="GET">
-            <div class="row">
-            <div class="col-md-3">
-              <div class="form-group">
-                <label>Dari</label>
-                <select class="form-control select2" name="i" style="width: 100%;">
-                  <option value=""> Semua </option>
-        					<?php foreach ($kontak->result() as $k) { ?>
-        					<option value="<?php echo $k->id_kontak; ?>" > <?php echo $k->kontak; ?> </option>
-        					<?php } ?>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form-group">
-                <label>Urut Berdasarkan</label>
-                <select class="form-control" name="k" style="width: 100%;">
-                	<option value="1" >Tanggal Surat</option>
-        					<option value="2" >Tanggal Diterima</option>
-        					<option value="3" selected >Tanggal Arsip</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <!-- Date -->
-              <div class="form-group">
-                <label>Mulai :</label>
-
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" name="m" id="datepicker" readonly="" required="" >
-                </div>
-                <!-- /.input group -->
-              </div>
-              <!-- /.form group -->
-            </div>
-            <div class="col-md-3">
-              <!-- Date -->
-              <div class="form-group">
-                <label>Sampai :</label>
-
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" name="s" id="datepicker2"  readonly="" required="" >
-                </div>
-                <!-- /.input group -->
-              </div>
-              <!-- /.form group -->
-            </div>
-          </div>
-          <!-- /.row -->
-            <button type="submit" class="btn btn-success" data-toggle="tooltip" title="klik untuk lanjut pencarian"><i class="fa fa-search"></i> Cari</button>
-          </form>
-          
-        </div>
-      </div>
+      
       <!-- /.box -->
 
 

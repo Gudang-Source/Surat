@@ -161,7 +161,7 @@
           </a>
           <ul class="treeview-menu">
             <li title="harian" ><a href="<?=base_url() ?>laporan/harian"><i class="fa fa-print"></i> Harian </a></li>
-            <li title="sesuaikan" ><a href="<?=base_url()?>laporan"><i class="fa fa-print"></i> Sesuaikan</a></li>
+            <!-- <li title="sesuaikan" ><a href="<?=base_url()?>laporan"><i class="fa fa-print"></i> Sesuaikan</a></li> -->
           </ul>
         </li>
 
@@ -190,9 +190,9 @@
           <ul title="lain-lain" class="treeview-menu">
           	<li title="akun saya"><a href="<?= base_url() ?>lain/akun"><i class="fa fa-user"></i> Akun Saya</a></li>
           	<li title="pengguna" <?= $user1; ?> <?= $user2; ?> ><a href="<?= base_url() ?>lain/pengguna"><i class="fa fa-users"></i> Pengguna</a></li>
-            <li title="riwayat" <?= $user1; ?> <?= $user2; ?> ><a href="<?= base_url() ?>lain/riwayat"><i class="fa fa-star-o"></i> Riwayat</a></li>
-            <!-- <li title="panduan sistem" ><a href="<?= base_url() ?>lain/panduan"><i class="fa fa-book"></i> Panduan Sistem</a></li>
-            <li title="tentang aplikasi" ><a href="<?= base_url() ?>lain/about"><i class="fa fa-users"></i> Tentang Aplikasi</a></li> -->
+            <li title="riwayat" <?= $user1; ?> <?= $user2; ?> ><a href="<?= base_url() ?>lain/riwayat"><i class="fa fa-star-o"></i> Riwayat</a></li> -->
+            <!-- <li title="panduan sistem" ><a href="<?= base_url() ?>lain/panduan"><i class="fa fa-book"></i> Panduan Sistem</a></li> -->
+            <!-- <li title="tentang aplikasi" ><a href="<?= base_url() ?>lain/about"><i class="fa fa-users"></i> Tentang Aplikasi</a></li>  -->
           </ul>
         </li>
 
